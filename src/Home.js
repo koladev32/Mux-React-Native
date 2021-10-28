@@ -6,11 +6,12 @@ import {TouchableOpacity, View, Dimensions} from 'react-native';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-function HomeScreen({navigate}) {
-
+function HomeScreen({navigation}) {
   const navigateToStreamingScreen = (videoId: string) => {
-
-  }
+    navigation.navigate('VideoStreaming', {
+      videoId: videoId,
+    });
+  };
   return (
     <Layout>
       <View
@@ -44,7 +45,7 @@ function HomeScreen({navigate}) {
               marginVertical: '2%',
               textAlign: 'center',
               backgroundColor: 'gray',
-              color: 'white'
+              color: 'white',
             }}>
             ID: ldjfouf38ufwoifjof98ewhf98h
           </Text>
@@ -62,21 +63,17 @@ function HomeScreen({navigate}) {
             <View
               style={{
                 width: '50%',
-              }}
-            >
-              <Text>
-                Duration
-              </Text>
-              <Text>
-                Status
-              </Text>
-              <Text>
-                Created at
-              </Text>
+              }}>
+              <Text>Duration</Text>
+              <Text>Status</Text>
+              <Text>Created at</Text>
             </View>
           </View>
         </TouchableOpacity>
         <TouchableOpacity
+          onPress={() => {
+            navigateToStreamingScreen('hihiiihihihihih')
+          }}
           style={{
             height: '45%',
           }}>
@@ -85,7 +82,7 @@ function HomeScreen({navigate}) {
               marginVertical: '2%',
               textAlign: 'center',
               backgroundColor: 'gray',
-              color: 'white'
+              color: 'white',
             }}>
             https://quelskljlkdsajflkasjflksajflkasjdflkasjfd
           </Text>
@@ -103,17 +100,10 @@ function HomeScreen({navigate}) {
             <View
               style={{
                 width: '50%',
-              }}
-            >
-              <Text>
-                Duration
-              </Text>
-              <Text>
-                Status
-              </Text>
-              <Text>
-                Created at
-              </Text>
+              }}>
+              <Text>Duration</Text>
+              <Text>Status</Text>
+              <Text>Created at</Text>
             </View>
           </View>
         </TouchableOpacity>
