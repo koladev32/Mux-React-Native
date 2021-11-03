@@ -4,7 +4,7 @@ import axios from "axios";
 export const muxBaseUrl = 'https://api.mux.com';
 
 // API server running on localhost
-export const muxServerUrl = 'http://localhost:3000';
+export const muxServerUrl = 'http://localhost:5000';
 
 // API for generating thumbnails of a video
 export const muxImageBaseUrl = 'https://image.mux.com';
