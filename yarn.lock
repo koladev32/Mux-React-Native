@@ -1526,6 +1526,11 @@ acorn@^8.2.4:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.5.0.tgz#4512ccb99b3698c752591e9bb4472e38ad43cee2"
   integrity sha512-yXbYeFy+jUuYd3/CDcg2NkIYE991XYX/bje7LmjJigUciaeO1JR4XxXgCIV1/Zc/dRuFEyw1L0pbA+qynJkW5Q==
 
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha1-JI8Kn25aUo7yKV2+7DBTITCuIjU=
+
 agent-base@6:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.2.tgz#49fff58577cfee3f37176feab4c22e00f86d7f77"
@@ -5545,10 +5550,20 @@ react-native-gesture-handler@^1.10.3:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-network-logger@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/react-native-network-logger/-/react-native-network-logger-1.12.0.tgz#a82528b3ac3cc2c7ded09ac37a0bba2e6030d032"
+  integrity sha512-3Esss/+caz0d53vuKOYS5i9YtNn76O2AvnKMwQovtXbpJs0Fc4oyJhNJ50YWNQBCKJ5aHqWUEYNE4Ryp5GLmeQ==
+
 react-native-nodemediaclient@^0.2.17:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/react-native-nodemediaclient/-/react-native-nodemediaclient-0.2.17.tgz#cbdf73e539c50ce1118786337ea64dc99d64e935"
   integrity sha512-A9KXffyrVd/R8roqiUAX9/x3uzXr1JKeLlCDqaMQif1zosLm3kW0K943CPeywVgEM0voBSlbnku9dFQgZzbl/Q==
+
+react-native-notifier@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/react-native-notifier/-/react-native-notifier-1.7.1.tgz#3dd214ad3ab6cdc4eec7b65cadffafa062399565"
+  integrity sha512-mhMVScuJILuljOn/S8uclwe4gbymMmVD8QvdYW+ir7G3CakjHNERIh41nAJeAtvoFdh69PYLqXdnOnXGRYuY8w==
 
 react-native-ratings@8.0.4:
   version "8.0.4"
@@ -7040,3 +7055,8 @@ yargs@^16.1.1:
     string-width "^4.2.0"
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
+
+yarn@^1.22.17:
+  version "1.22.17"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.17.tgz#bf910747d22497b573131f7341c0e1d15c74036c"
+  integrity sha512-H0p241BXaH0UN9IeH//RT82tl5PfNraVpSpEoW+ET7lmopNC61eZ+A+IDvU8FM6Go5vx162SncDL8J1ZjRBriQ==
