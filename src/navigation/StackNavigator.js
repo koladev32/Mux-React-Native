@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../Home';
-import VideoStreaming from "../VideoStreaming";
+import {VideoStreaming} from '../VideoStreaming';
 
 const Stack = createStackNavigator();
 
@@ -30,6 +30,7 @@ const StackNavigator = () => {
           headerTitleStyle: {
             color: '#fff',
           },
+          headerTintColor: '#fff',
         }}
         name="VideoStreaming"
         component={VideoStreaming}
