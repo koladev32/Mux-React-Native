@@ -36,7 +36,7 @@ function HomeScreen({navigation}) {
 
   const handleVideoLinkSubmit = videoUrl => {
     axios
-      .post('`${muxServerUrl}/assets', {url: videoUrl})
+      .post(`${muxServerUrl}/assets`, {url: videoUrl})
       .then(res => {
         notify.success('Video added.');
       })

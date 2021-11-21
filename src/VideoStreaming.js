@@ -15,7 +15,7 @@ import Layout from './Layout';
 export const VideoStreaming = ({route, navigation}) => {
   const {videoId} = route.params;
 
-  const asset = useSWR(`\`${muxServerUrl}/assets/${videoId}`, fetcher);
+  const asset = useSWR(`${muxServerUrl}/assets/${videoId}`, fetcher);
   const assetData = asset.data;
 
   return (
@@ -32,6 +32,8 @@ export const VideoStreaming = ({route, navigation}) => {
               marginBottom: '2%',
             }}
             repeat={true}
+            resizeMode="cover"
+            onBuffer={() => {console.log('onBuffer');}}
           />
           <View
             style={{
