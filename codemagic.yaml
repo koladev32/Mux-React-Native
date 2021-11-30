@@ -5,6 +5,8 @@ workflows:
     react-native:
         name: React Native App
         environment:
+            groups:
+                - keystore_credentials
             vars:
                 XCODE_WORKSPACE: "ReactNativeApp"
                 XCODE_SCHEME: "ReactNativeApp"
