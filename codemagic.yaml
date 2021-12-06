@@ -1,19 +1,24 @@
 # Check out https://docs.codemagic.io/getting-started/building-a-react-native-app/ for more information
 # Please review and update values in curly braces
 
+
 workflows:
     react-native:
         name: React Native App
         environment:
             groups:
-                - mux-app
+                - mux-app    
+            vars:
+                FCI_KEYSTORE_PASSWORD: Encrypted()
+                FCI_KEY_PASSWORD: Encrypted()
+                FCI_KEY_ALIAS: Encrypted()
             node: latest
         scripts:
-            - npm install
+            - yarn install
             - echo "sdk.dir=$HOME/programs/android-sdk-macosx" > "$FCI_BUILD_DIR/android/local.properties"
             - |
+                chmod -R 777 $FCI_BUILD_DIR
+                echo $CM_KEYSTORE | base64 --decode > $FCI_BUILD_DIR/keystore.jks
                 # build Android
                 cd android
-                ./gradlew assembleDebug
-        artifacts:
-            - android/app/build/outputs/**/**/*.apk
+                ./gradlew assembleRelease
