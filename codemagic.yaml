@@ -5,6 +5,8 @@ workflows:
     react-native:
         name: React Native App
         environment:
+            groups:
+                - mux-app
             node: latest
         scripts:
             - npm install
