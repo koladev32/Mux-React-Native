@@ -15,7 +15,7 @@ workflows:
             node: latest
         scripts:
             - yarn install
-            - react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/app.bundle
+            - npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/app.bundle
             - echo "sdk.dir=$HOME/programs/android-sdk-macosx" > "$FCI_BUILD_DIR/android/local.properties"
             - |
                 chmod -R 777 $FCI_BUILD_DIR
