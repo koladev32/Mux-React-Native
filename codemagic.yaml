@@ -12,7 +12,7 @@ workflows:
                 FCI_KEYSTORE_PASSWORD: Encrypted()
                 FCI_KEY_PASSWORD: Encrypted()
                 FCI_KEY_ALIAS: Encrypted()
-            node: latest
+            node: 14.18.1
         scripts:
             - yarn install
             - npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/app.bundle
